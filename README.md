@@ -10,10 +10,6 @@ Install the packages necessary for the operation of the application.
 
 The application will start.
 
-### `Run Api Weather`
-
-This application consumes the project data <a href="https://github.com/alexistec/apiweather">apiweather</a>.
-
 ### Package
 
 The following packages were used in this application: <a href="https://github.com/mui-org/material-ui">Material UI</a>, <a href="https://github.com/react-spring/zustand">Zustand</a>, <a href="https://github.com/moment/moment">Moment</a>
