@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <WeatherApp/> should renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Weather in 
+    formosa
+     
+  </h1>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div
+      className="MuiAvatar-root MuiAvatar-circular"
+      style={
+        Object {
+          "height": 100,
+          "width": 100,
+        }
+      }
+    >
+      <img
+        alt="icon.jpg"
+        className="MuiAvatar-img"
+        src="https://openweathermap.org/img/wn/icon.jpg.png"
+      />
+    </div>
+    <h1>
+      12
+      °
+    </h1>
+  </div>
+  <h3
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Humedity 
+    58
+  </h3>
+</div>
+`;

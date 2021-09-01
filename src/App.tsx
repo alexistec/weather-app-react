@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React,{ useEffect } from 'react';
 import useStoreWeather from './store/';
 import { makeStyles} from '@material-ui/core/styles';
 import { Card } from '@material-ui/core';
@@ -17,7 +17,6 @@ function App() {
   const { getWeatherByCity, getForecast } = useStore(state => state);
   const {isLoading,error} = useStore(state => state);
 
-  console.log(city)
 
   useEffect(()=>{
     (async function(){

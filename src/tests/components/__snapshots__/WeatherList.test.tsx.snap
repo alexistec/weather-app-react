@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in Component <WeatherList/> should render correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "marginLeft": 15,
+        "width": 180,
+      }
+    }
+  >
+    <div
+      className="MuiCardContent-root"
+    >
+      <h3>
+        Wednesday
+      </h3>
+      <div
+        className="MuiAvatar-root MuiAvatar-circular"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <img
+          alt="Remy Sharp"
+          className="MuiAvatar-img"
+          src="http://openweathermap.org/img/wn/01d.png"
+        />
+      </div>
+      <h3>
+        33.82
+        °
+      </h3>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "marginLeft": 15,
+        "width": 180,
+      }
+    }
+  >
+    <div
+      className="MuiCardContent-root"
+    >
+      <h3>
+        Thursday
+      </h3>
+      <div
+        className="MuiAvatar-root MuiAvatar-circular"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <img
+          alt="Remy Sharp"
+          className="MuiAvatar-img"
+          src="http://openweathermap.org/img/wn/02n.png"
+        />
+      </div>
+      <h3>
+        25.34
+        °
+      </h3>
+    </div>
+  </div>
+</div>
+`;
