@@ -20,13 +20,13 @@ const ListCities:React.FC<ListCitiesProps> = ({ cities, getWeather }) => {
                     title="Cities"
                 />
                 <List component="nav" aria-label="main mailbox folders">
-                    {cities.map((value:any, index:number) =>( 
-                        <>
-                            <ListItem button key={index} onClick={ () => getWeather(value.city) }>
+                    {cities.map((value:any) =>( 
+                        <div key={value.city}>
+                            <ListItem button  onClick={ () => getWeather(value.city) }>
                                 <span>{value.city}</span>
                             </ListItem>
                             <Divider/>
-                        </>
+                        </div>
                     ))}
                 </List>
             </Card>

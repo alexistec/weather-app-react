@@ -44,7 +44,6 @@ export interface Days{
 export interface WeatherState{
     cities:Country[];
     days    : Days[];
-    getCurrent : () => void;
     getWeatherByCity: (cityName:string) => void;
     getForecast : (cityName:string) => void;
     isLoading:boolean;

@@ -10,35 +10,19 @@ import WeatherList  from '../src/components/WeatherList';
 const [useStore] = useStoreWeather;
 
 
-const useStyles = makeStyles(theme => ({
-  root:{
-      paddingTop:56,
-      paddingLeft: 120,
-      paddingRight: 120,
-      height:'100%',
-  },
-  rootDashboard:{
-      padding:theme.spacing(4),
-  },
-  shiftContent: {
-    paddingLeft: 240,
-  },
-  content: {
-    height: '100%',
-  }
-}))
-
 function App() {
   const classes = useStyles();
   const citiesList = useStore(state => state.cities);
   const { city, icon, temp, humedity, days } = useStore(state => state);
-  const { getCurrent, getWeatherByCity, getForecast } = useStore(state => state);
+  const { getWeatherByCity, getForecast } = useStore(state => state);
   const {isLoading,error} = useStore(state => state);
+
+  console.log(city)
 
   useEffect(()=>{
     (async function(){
-      await getCurrent();
-      await getForecast('');
+      await getWeatherByCity('Formosa');
+      await getForecast('Formosa');
     })()
   },[])
 
@@ -81,5 +65,23 @@ function App() {
     </div>
   );
 }
+
+const useStyles = makeStyles(theme => ({
+  root:{
+      paddingTop:56,
+      paddingLeft: 120,
+      paddingRight: 120,
+      height:'100%',
+  },
+  rootDashboard:{
+      padding:theme.spacing(4),
+  },
+  shiftContent: {
+    paddingLeft: 240,
+  },
+  content: {
+    height: '100%',
+  }
+}))
 
 export default App;
